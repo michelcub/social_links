@@ -1,0 +1,102 @@
+:root{
+    --profile_width: 19.938rem;
+    --profile_height: 27.563rem;
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey_700: hsl(0, 0%, 20%);
+    --grey_800: hsl(0, 0%, 12%);
+    --grey_900: hsl(0, 0%, 8%);
+    --font_size_global: 0.875rem;
+    --fw_S : 400;
+    --fw_M : 600;
+    --fw_L: 700;
+    --font_family: "Inter";
+}
+
+
+body{
+    font-size: var(--font_size_global);
+    font-family: var(--font_family);
+    background-color: var(--grey_900);
+    color: var(--white);
+}
+
+.profile{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__info{
+    background-color: var(--grey_800);
+    width: var(--profile_width);
+    min-height: var(--profile_height);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1.7rem;    
+    border-radius: 5px;
+    padding-top: 2rem;
+    padding: 2.8rem;
+}
+
+.profile__avatar{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: url(../assets/images/avatar-jessica.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}
+
+.profile__detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__name{
+    padding: 0px;
+    margin: 0px;
+    font-weight: var(--fw_M);
+    font-size: 1.5rem;
+}
+
+.profile__location{     
+    margin-top: 0.6rem;
+    color: var(--green);
+    font-size: 0.8rem;
+    font-weight: var(--fw_M);
+}
+
+.profile__bio{
+    font-size: 0.8rem;
+}
+
+.profile__social-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.profile__social-link{
+    width: 100%;
+    height: auto;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--grey_700);
+    text-align: center;
+}
+
+.profile__social-link:hover{
+    background-color: var(--grey_900);
+}
